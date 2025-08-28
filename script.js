@@ -120,7 +120,11 @@ function MakeCard(){
     imgBox.classList.add("img");
 
     let picture = document.createElement("img");
-    picture.setAttribute("src", task.imgeUrl);
+    // picture.setAttribute("src", task.imgeUrl);
+      picture.setAttribute("src", task.imgeUrl || `https://ui-avatars.com/api/?name=${encodeURIComponent(task.title)}&background=random`);
+picture.onerror = function () {
+    this.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(task.title)}&background=random`;
+};
 
     imgBox.appendChild(picture);
 
