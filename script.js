@@ -96,7 +96,7 @@ function FormData() {
         boxCard.style.display = 'flex';
         form.style.display = 'none';
     MakeCard();
-
+ location.reload();
     });
 
 }
