@@ -64,6 +64,10 @@ label {
   font-weight: 500;
   color: #000000;
 }
+#Opt{
+  color: #ff0000;
+  font-size: 12px;
+}
 
 input[type="text"] {
   padding: 10px 14px;
